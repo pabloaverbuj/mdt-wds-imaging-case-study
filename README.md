@@ -218,6 +218,11 @@ Get-WdsBootImage -Architecture x64
 
 El handshake completo desde que el cliente enciende hasta que aparece el wizard:
 
+![Animación del handshake PXE: DHCP Discover, TFTP del boot image, entrega del LiteTouchPE_x64.wim, montaje SMB del deployment share y arranque del wizard](assets/pxe-handshake.gif)
+
+<details>
+<summary>El mismo flujo como diagrama de secuencia (texto)</summary>
+
 ```mermaid
 sequenceDiagram
     autonumber
@@ -240,6 +245,8 @@ sequenceDiagram
     C->>M: Descarga install.wim + aplica la TS
     C->>C: Reboot → OOBE → PPKG → Entra ID Join
 ```
+
+</details>
 
 ---
 
