@@ -300,15 +300,6 @@ Cuando WinRM (5985) y DCOM (135) están cerrados en el firewall del server, el c
 
 `MDT 8456` · `Windows ADK / WinPE / DISM` · `WDS + PXE / TFTP` · `DHCP (opt 66/67)` · `MikroTik RouterOS (mangle, PCC, policy-routing)` · `Entra ID Join` · `Intune / MDM` · `PowerShell` · `Windows Configuration Designer (PPKG)` · `BitLocker` · `Windows Hello for Business`
 
-## Roadmap
-
-- [x] PXE del deployment share funcionando end-to-end
-- [x] Media offline autónoma para VM
-- [x] Resuelto el routing inter-segmento con dual-WAN
-- [ ] Automatizar PPKG + MDM enrollment dentro de la Task Sequence
-- [ ] Auto-incremento secuencial del nombre de equipo
-- [ ] Inyección de drivers por modelo
-
 ## Licencia
 
 MIT
