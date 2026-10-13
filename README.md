@@ -1,7 +1,8 @@
-# Zero-Touch Windows 11 Imaging — MDT + WDS (Cloud-Only, Sin AD)
+# Lite-Touch Windows 11 PXE Imaging — MDT + WDS 
 
 > Case study de un pipeline de masterización de Windows 11 Pro con **Microsoft Deployment Toolkit + WDS/PXE** 
 El objetivo era montar dentro de la infraestructura local una solución sin costes adicionales para desplegar masivamente los endpoints garantizando que pasen de bare metal machines a endpoints gestionados y asegurados.
+
 ![status](https://img.shields.io/badge/status-producci%C3%B3n-green)
 ![OS](https://img.shields.io/badge/target-Windows%2011%20Pro-0078D6)
 ![MDT](https://img.shields.io/badge/MDT-8456-5C2D91)
