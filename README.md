@@ -1,7 +1,7 @@
 # Zero-Touch Windows 11 Imaging — MDT + WDS (Cloud-Only, Sin AD)
 
-> Case study de un pipeline de masterización de Windows 11 Pro con **Microsoft Deployment Toolkit + WDS/PXE** para una organización **100% cloud (Entra ID + Intune), sin Active Directory on-premises**.
-
+> Case study de un pipeline de masterización de Windows 11 Pro con **Microsoft Deployment Toolkit + WDS/PXE** 
+El objetivo era montar dentro de la infraestructura local una solución sin costes adicionales para desplegar masivamente los endpoints garantizando que pasen de bare metal machines a endpoints gestionados y asegurados.
 ![status](https://img.shields.io/badge/status-producci%C3%B3n-green)
 ![OS](https://img.shields.io/badge/target-Windows%2011%20Pro-0078D6)
 ![MDT](https://img.shields.io/badge/MDT-8456-5C2D91)
@@ -12,7 +12,7 @@
 
 ## El problema
 
-Masterizar equipos Windows 11 nuevos a escala en una organización **sin domain controllers**. El clásico MDT asume Active Directory (domain join, cuentas de servicio de dominio, OUs). Acá la identidad es **cloud-only**: hay que desacoplar el imaging del dominio y resolver la identidad *después*, con Entra ID Join + enrolamiento en Intune.
+Los endpoints eran instalados de forma manual usando una imagen de Windows mediante una media local USB. Teníamos que armar una solución para desplegar masivamente Windows en los endpoints usando la menor intervención posible y que a la vez sea escalable sin generar gastos en herramientas como MECM/SCCM.
 
 ## Solución — arquitectura
 
